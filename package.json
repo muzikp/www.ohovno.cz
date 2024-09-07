@@ -1,0 +1,17 @@
+{
+	"name": "www.ohovno.cz",
+	"version": "1.0.0",
+	"description": "www.ohovno.cz",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "npx web run",
+		"npx-web-run": "web-run"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"static-bootstrap-web": "file:../static-bootstrap-web"
+	}
+}
