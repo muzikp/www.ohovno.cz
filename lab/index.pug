@@ -1,5 +1,47 @@
 extends layout
 
 block content
-    script.
-        window.location.href = "https://www.youtube.com/watch?si=aOQrZjMpz6vfXYTV&v=AnCLuAX6LiQ&feature=youtu.be"
+    .content
+        .logo-panel
+            img(src="/media/logo.svg")
+        h1 Ohovno
+        br
+        h5 Claim (jedna věta...a v tý musí bejt všechno!)
+        hr 
+        br
+        h2 O projektu
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus luctus egestas leo. Integer imperdiet lectus quis justo. Nunc auctor. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Maecenas sollicitudin. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Fusce nibh. Nullam rhoncus aliquam metus. In rutrum. Mauris elementum mauris vitae tortor. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Vestibulum fermentum tortor id mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. In enim a arcu imperdiet malesuada. Aenean vel massa quis mauris vehicula lacinia.
+        p Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Etiam posuere lacus quis dolor. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Aliquam erat volutpat. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. In enim a arcu imperdiet malesuada. Fusce nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean fermentum risus id tortor. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Nullam dapibus fermentum ipsum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec iaculis gravida nulla.
+        p Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Pellentesque arcu. Etiam dictum tincidunt diam. Suspendisse nisl. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum fermentum tortor id mi. Aliquam in lorem sit amet leo accumsan lacinia. Pellentesque sapien. Mauris dictum facilisis augue. Fusce consectetuer risus a nunc. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat.
+        br
+        hr
+        br
+        h2 Zaregistrujte se
+        form#contact(action="javascript:void(0)")
+            .column
+                .line.form-floating.mb-3
+                    input#email.form-control(name="email" type='email' placeholder='jmeno@example.com' required)
+                    label(for='email') email
+                .line.form-floating.mb-3
+                    input#name.form-control(name="name" type='text' placeholder='jméno a příjmení')
+                    label(for='name') jméno a příjmení
+                .line.form-floating.mb-3
+                    input#phone.form-control(name="phone" type='tel' placeholder='777 888 999')
+                    label(for='phone') telefon
+                .line.form-floating.mb-3
+                    button#submit.btn.btn-primary(type="submit") Odeslat
+        br
+        br
+        small Kdo, jak a za jakým účelem zachází s daty.
+        br
+        hr
+        br
+        h2 Kontakt
+        b ohovno.cz 
+        p Local Club z.s.
+        p IČ: 09612823
+        p Čechova 1445, Poděbrady III, 290 01 Poděbrady
+        p Spolek je zapsán pod spisovou značkou	L 73979 u Městského soudu v Praze
+        br
+        p jmeno@email.cz
+        p +420 777 888 999
