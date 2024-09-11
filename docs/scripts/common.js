@@ -71,7 +71,7 @@ $(function() {
                 title: 'Děkujeme Vám!',
                 message: 'Váš kontakt byl úspěšně odeslán.',
             });
-            $("#submit").attr("disabled", true);
+            $("#submit").attr("disabled", true).text("Odesláno");
         }).fail(function(jqXHR, textStatus, errorThrown) {
             iziToast.error({
                 title: ':-(',
