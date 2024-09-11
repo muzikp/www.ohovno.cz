@@ -68,14 +68,14 @@ $(function() {
             dataType: "json" // Očekávejte JSON odpověď od serveru
         }).done(function(response) {
             iziToast.success({
-                title: 'Děkujeme Vám!',
+                title: 'Díky!',
                 message: response?.message,
             });
             $("#submit").attr("disabled", true).text("Odesláno");
         }).fail(function(jqXHR, textStatus, errorThrown) {
             iziToast.error({
                 title: ':-(',
-                message: response?.error || 'Váš kontakt se bohužel nepodařilo odeslat. Zkuste to za chvíli.',
+                message: response?.error || 'Tcůj kontakt se bohužel nepodařilo odeslat. Zkus to za chvíli.',
             });
         });
     });
