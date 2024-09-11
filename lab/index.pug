@@ -5,11 +5,8 @@ block content
         .logo-panel
             img(src="/media/logo.svg")        
         br
-        .claim
-            h2 Mysleme na sebe!
-        br
-        hr 
-        br        
+        .tc
+            h1 Mysleme na sebe!                
         p Vlastně se všichni známe. I když patříme do různých skupinek.
         p Spojují nás Poděbrady, zážitky, věk, … kamarádi. 
         p Někdy nás spojují i společné problémy a bolesti.
@@ -17,13 +14,14 @@ block content
         p Dokážeme se navzájem i hlídat?
         p I když půjde o hovno?
         hr
-        h5 Pojďme společně zkontrolovat, že nám rakovina nehrozí!
+        .tc
+            h5 Pojďme společně zkontrolovat, že nám rakovina nehrozí!
         ol
             li
                 p 
                     b Zaregistruj se
                     |  pomocí 
-                    a(href="#contact") formuláře 
+                    a(href="#formular") formuláře 
                     | níže
             li
                 p
@@ -57,32 +55,40 @@ block content
         br
         hr
         br
-        h2 Akce na hovno! Jsem pro:
-        form#contact(action="javascript:void(0)")
-            .column
-                .line.form-floating.mb-3
-                    input#email.form-control(name="email" type='email' placeholder='jmeno@example.com' required)
-                    label(for='email') email
-                .line.form-floating.mb-3
-                    input#name.form-control(name="name" type='text' placeholder='jméno a příjmení')
-                    label(for='name') jméno a příjmení
-                .line.form-floating.mb-3
-                    input#phone.form-control(name="phone" type='tel' placeholder='777 888 999')
-                    label(for='phone') telefon
-                .line.form-floating.mb-3
-                    button#submit.btn(type="submit") Odeslat
+        #formular
+            .tc
+                h2 Akce na hovno! 
+                h6 Jsem pro:
+            form#contact(action="javascript:void(0)")
+                .column
+                    .line.form-floating.mb-3
+                        input#email.form-control(name="email" type='email' placeholder='jmeno@example.com' required)
+                        label(for='email') email
+                    .line.form-floating.mb-3
+                        input#name.form-control(name="name" type='text' placeholder='jméno a příjmení')
+                        label(for='name') jméno a příjmení
+                    .line.form-floating.mb-3
+                        input#phone.form-control(name="phone" type='tel' placeholder='777 888 999')
+                        label(for='phone') telefon
+                    .line.form-floating.mb-3
+                        button#submit.btn(type="submit") Odeslat
         br
         br
         small Kdo, jak a za jakým účelem zachází s daty.
         br
         hr
         br
-        h2 Kontakt
-        b ohovno.cz 
-        p Local Club z.s.
-        p IČ: 09612823
-        p Čechova 1445, Poděbrady III, 290 01 Poděbrady
-        p Spolek je zapsán pod spisovou značkou	L 73979 u Městského soudu v Praze
-        br
-        p jmeno@email.cz
-        p +420 777 888 999
+        .tc
+            h2 Kontakt
+            b ohovno.cz 
+            p Local Club z.s.
+            p IČ: 09612823
+            p Čechova 1445, Poděbrady III, 290 01 Poděbrady
+            p Spolek je zapsán pod spisovou značkou	L 73979 u Městského soudu v Praze
+            br
+            p 
+                a(href="mailto:jmeno@email.cz") jmeno@email.cz
+            p 
+                a(href="tel:+420 777 888 999") +420 777 888 999
+            .logo-panel
+                img(src="/media/logo.svg")

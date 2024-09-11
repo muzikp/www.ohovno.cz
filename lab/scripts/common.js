@@ -69,13 +69,13 @@ $(function() {
         }).done(function(response) {
             iziToast.success({
                 title: 'Děkujeme Vám!',
-                message: 'Váš kontakt byl úspěšně odeslán.',
+                message: response?.message,
             });
             $("#submit").attr("disabled", true).text("Odesláno");
         }).fail(function(jqXHR, textStatus, errorThrown) {
             iziToast.error({
                 title: ':-(',
-                message: 'Váš kontakt se bohužel nepodařilo odeslat. Zkuste to za chvíli.',
+                message: response?.error || 'Váš kontakt se bohužel nepodařilo odeslat. Zkuste to za chvíli.',
             });
         });
     });
