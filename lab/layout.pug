@@ -38,4 +38,8 @@ html(lang="cs-CZ")
 		if(_config.seo.google.gtm.token)
 			noscript
 				iframe(src='https://www.googletagmanager.com/ns.html?id=' + _config.seo.google.gtm.token height='0' width='0' style='display:none;visibility:hidden')
-		block content
+		.content
+			.logo-panel
+				img(src="/media/logo.svg")        
+			br
+			block content
