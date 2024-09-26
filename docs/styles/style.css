@@ -78,3 +78,23 @@ p, b, a, i, small {
 hr {
   color: black;
 }
+
+#gallery {
+  display: flex;
+  text-align: center;
+}
+#gallery img {
+  max-width: 50%;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  #gallery {
+    display: block;
+    text-align: center;
+  }
+  #gallery img {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
