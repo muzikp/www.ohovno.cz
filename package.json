@@ -12,6 +12,7 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"commander": "^14.0.0",
 		"static-bootstrap-web": "file:../static-bootstrap-web"
 	}
 }
